@@ -58,7 +58,7 @@ epoch    2/2000 Log Cosh Loss = 0.24375407153465225
 epoch  865/2000 Log Cosh Loss = 0.001045385944558071
 epoch  866/2000 Log Cosh Loss = 0.001005062165002299
 epoch  867/2000 Log Cosh Loss = 0.0010004123525764889
-██████████████████████████                         1/2 , batch 1
+██████████████████████████                         Average Log Cosh Loss =   0.0008173355299494, 1/2 of Batch 1
 
 ```
 Sample xor result
@@ -83,7 +83,7 @@ Sample xor result
 		- Scaling layer
 		- Flatten layer
 		- Reshape layer
-	- Recurrent layers (cells)
+	- Recurrent layers (cells) [TODO]
 		- RNN
 		- GRU
 		- LSTM
@@ -106,7 +106,7 @@ Sample xor result
 - Weight Regularizer
 	L1, L2 & Elastic Net Regularizers
 
-Helper functions are available in [hy.API](https://github.com/Brannigan123/Sprout/blob/master/src/hy/API.java) or alternatively make use of builder methods of respective classes.
+Helper functions are available in [hy.API](https://github.com/Brannigan123/Hy/blob/master/src/hy/API.java) or alternatively make use of builder methods of respective classes.
 
 ## More Samples
 ### Convolutional Neural Network
