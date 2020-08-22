@@ -69,7 +69,7 @@ public class AE {
         val trainConfig = TrainConfig() //
                 .inputs(x)//
                 .targets(x) //
-                .batchSize(4) //
+                .batchSize(20) //
                 .shuffle(true) //
                 .loss(LogCoshLoss)//
                 .epochLossCallBack(AE::epochCallback) //
