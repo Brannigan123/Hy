@@ -1,6 +1,12 @@
 # Hypatia (Hy) Neural Net Library
 Simple Neural Network implementation from scratch, meant to solidify my understanding of the topic.
 
+## Sample Screenshots 
+![Training Graph](https://github.com/Brannigan123/Hy/blob/master/images/Training.PNG)
+![Alice image 1 inference](https://github.com/Brannigan123/Hy/blob/master/images/Alice.PNG)
+![Alice image 2 inference](https://github.com/Brannigan123/Hy/blob/master/images/Alice%202.PNG)
+![Carlos image 1 inference](https://github.com/Brannigan123/Hy/blob/master/images/Carlos%202.PNG)
+![Carlos image 2 inference](https://github.com/Brannigan123/Hy/blob/master/images/Carlos%203.PNG)
 ## Snippet
 ### Xor Gate
 Here is the classic xor gate implemented with a 3 layer FC neural net.
