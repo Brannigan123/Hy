@@ -119,10 +119,7 @@ Helper functions are available in [hy.API](https://github.com/Brannigan123/Hy/bl
 <img src="images/Training.PNG" height="400em" hspace=10 vspace=10/>
 
 #### Inference
-<img src="images/Alice.PNG" height="400em" hspace=10 vspace=10/>
-<img src="images/Alice%202.PNG" height="400em" hspace=10 vspace=10/>
-<img src="images/Carlos%202.PNG" height="400em" hspace=10 vspace=10/>
-<img src="images/Carlos%203.PNG" height="400em" hspace=10 vspace=10/>
+<img src="images/Alice.PNG" height="400em" hspace=10 vspace=10/><img src="images/Alice%202.PNG" height="400em" hspace=10 vspace=10/><img src="images/Carlos%202.PNG" height="400em" hspace=10 vspace=10/><img src="images/Carlos%203.PNG" height="400em" hspace=10 vspace=10/>
 
 ## More Snippets
 
