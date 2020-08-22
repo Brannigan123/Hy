@@ -1,16 +1,11 @@
 # Hypatia (Hy) Neural Net Library
+
 Simple Neural Network implementation from scratch, meant to solidify my understanding of the topic.
 
-## Sample Screenshots [link to this sample](https://github.com/Brannigan123/FaceID)
-### Training
-![Training Graph](https://github.com/Brannigan123/Hy/blob/master/images/Training.PNG)
-### Inference
-![Alice image 1 inference](https://github.com/Brannigan123/Hy/blob/master/images/Alice.PNG)
-![Alice image 2 inference](https://github.com/Brannigan123/Hy/blob/master/images/Alice%202.PNG)
-![Carlos image 1 inference](https://github.com/Brannigan123/Hy/blob/master/images/Carlos%202.PNG)
-![Carlos image 2 inference](https://github.com/Brannigan123/Hy/blob/master/images/Carlos%203.PNG)
 ## Snippet
+
 ### Xor Gate
+
 Here is the classic xor gate implemented with a 3 layer FC neural net.
 
 ```java
@@ -79,6 +74,7 @@ Sample xor result
 ```
 
 ## Features
+
 - Sequential Model
 - Layers
 	- Feed-forward layers
@@ -116,8 +112,22 @@ Sample xor result
 
 Helper functions are available in [hy.API](https://github.com/Brannigan123/Hy/blob/master/src/hy/API.java) or alternatively make use of builder methods of respective classes.
 
-## More Samples
+### Sample Project Screenshots
+[link](https://github.com/Brannigan123/FaceID) to this project's repo.
+
+#### Training
+<img src="images/Training.PNG" height="400em" hspace=10 vspace=10/>
+
+#### Inference
+<img src="images/Alice.PNG" height="400em" hspace=10 vspace=10/>
+<img src="images/Alice%202.PNG" height="400em" hspace=10 vspace=10/>
+<img src="images/Carlos%202.PNG" height="400em" hspace=10 vspace=10/>
+<img src="images/Carlos%203.PNG" height="400em" hspace=10 vspace=10/>
+
+## More Snippets
+
 ### Convolutional Neural Network
+
 ```java
 Sequential featureExtractor = Sequential(        // 3*256*256
           .add(Conv(4, 3, 3))                    // 4*254*254
@@ -167,6 +177,7 @@ cnn.fit(trainConfig);
 ```
 
 ### Fully Convolutional AutoEncoder
+
 ```java
 Sequential encoder = Sequential()                // 3*256*256
           .add(Conv(4, 3, 3))                    // 4*254*254
