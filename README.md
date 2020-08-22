@@ -1,8 +1,10 @@
 # Hypatia (Hy) Neural Net Library
 Simple Neural Network implementation from scratch, meant to solidify my understanding of the topic.
 
-## Sample Screenshots 
+## Sample Screenshots [link to this sample](https://github.com/Brannigan123/FaceID)
+### Training
 ![Training Graph](https://github.com/Brannigan123/Hy/blob/master/images/Training.PNG)
+### Inference
 ![Alice image 1 inference](https://github.com/Brannigan123/Hy/blob/master/images/Alice.PNG)
 ![Alice image 2 inference](https://github.com/Brannigan123/Hy/blob/master/images/Alice%202.PNG)
 ![Carlos image 1 inference](https://github.com/Brannigan123/Hy/blob/master/images/Carlos%202.PNG)
