@@ -486,7 +486,7 @@ public class NArray implements Cloneable, Iterable<Double> {
         int N = coords.length;
         if (N > dims) throw new IllegalArgumentException(
                 "Coordinates dimensionality " + N + ", is out of bounds for " + getClass().getSimpleName() + shape);
-        if (N == dims) return Double.toString(this[coords]);
+        if (N == dims) return Format.fmtDecimal(this[coords]);
         else {
             int n = shape[N];
             val list = IntStream.range(0, Math.min(limit, n)).mapToObj(i -> {
@@ -514,29 +514,6 @@ public class NArray implements Cloneable, Iterable<Double> {
     @AllArgsConstructor(staticName = "of")
     private static class comparable {
         int[] arr;
-    }
-
-    public static void main(String[] args) {
-        val arr = new NArray(new int[] { 3, 4 }, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
-        val arr2 = arr.T();
-        val arr3 = arr.dot(arr2);
-        val arr4 = arr3.reduceLast(0, Double::sum);
-        val arr5 = arr.reshaped(3, 2, 2);
-        val arr6 = arr5.reduceFirst(0, Double::sum);
-        println(arr);
-        println(arr2);
-        println(arr3);
-        println(arr4);
-        println(arr5);
-        println(arr5.reduceLastDims(2, 0, Double::sum));
-        println(arr6);
-        println(arr5.reduceFirstDims(2, 0, Double::sum));
-        println(arr5.reduceDim(1, 0, Double::sum));
-        println(arr5.reduceDim(0, 1, 0, Double::sum));
-        println(arr.map(Math::sqrt, Math::sin));
-        println(Arrays.toString(broadcast(new int[] { 3, 2, 4 }, new int[] { 3, 2, 1 })));
-
-        println(of(arr, arr, arr));
     }
 
 }
