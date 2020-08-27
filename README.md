@@ -110,23 +110,23 @@ Sample xor result
 - Weight Regularizer
 	L1, L2 & Elastic Net Regularizers
 
-Helper functions are available in [hy.API](https://github.com/Brannigan123/Hy/blob/master/src/hy/API.java) or alternatively make use of builder methods of respective classes.
+Helper functions are available in *[API.java](src/hy/API.java)* or alternatively make use of builder methods of respective classes.
 
 ### Sample Project Screenshots
-[link](https://github.com/Brannigan123/FaceID) to this project's repo.
+*[FaceID](https://github.com/Brannigan123/FaceID)* to this project's repo.
 
 #### Training
-<img src="images/Training.PNG" height="400em" hspace=10 vspace=10/>
+<img src="images/Training.PNG" width="750em" hspace=10 vspace=10/>
 
 #### Inference
-<img src="images/Alice.PNG" height="400em" hspace=10 vspace=10/><img src="images/Alice%202.PNG" height="400em" hspace=10 vspace=10/><img src="images/Carlos%202.PNG" height="400em" hspace=10 vspace=10/><img src="images/Carlos%203.PNG" height="400em" hspace=10 vspace=10/>
+<img src="images/Alice.PNG" width="750em" hspace=10 vspace=10/><img src="images/Alice%202.PNG" width="750em" hspace=10 vspace=10/><img src="images/Carlos%202.PNG" width="750em" hspace=10 vspace=10/><img src="images/Carlos%203.PNG" width="750em" hspace=10 vspace=10/>
 
 ## More Snippets
 
 ### Convolutional Neural Network
 
 ```java
-Sequential featureExtractor = Sequential(        // 3*256*256
+Sequential featureExtractor = Sequential()       // 3*256*256
           .add(Conv(4, 3, 3))                    // 4*254*254
           .add(Conv(5, 4, 3))                    // 5*252*252
           .add(MaxPool(2), Gauss)                // 5*126*126
